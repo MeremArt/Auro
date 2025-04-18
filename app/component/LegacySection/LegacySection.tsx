@@ -4,8 +4,12 @@ import Image from "next/image";
 
 export default function LegacySection() {
   return (
-    <section className="opacity-50 bg-[#333] backdrop-blur-[15px] text-white py-16">
-      <div className="container mx-auto px-4">
+    <section className="relative text-white py-16">
+      {/* Background with opacity */}
+      <div className="absolute inset-0 bg-[#333] opacity-50 backdrop-blur-[15px] z-0"></div>
+
+      {/* Content container - no opacity */}
+      <div className="container mx-auto px-4 relative z-10">
         {/* Main Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 font-orbitron">
           The Legacy of Auro
