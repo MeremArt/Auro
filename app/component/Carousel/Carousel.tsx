@@ -92,6 +92,7 @@ export default function FeatureCarousel() {
   ];
 
   const containerRef = useRef(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [duplicatedFeatures, setDuplicatedFeatures] = useState([
     ...features,
     ...features,

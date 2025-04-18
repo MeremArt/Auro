@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FeatureCarousel from "./component/Carousel/Carousel";
 import LegacySection from "./component/LegacySection/LegacySection";
 export default function Home() {

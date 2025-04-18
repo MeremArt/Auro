@@ -1,7 +1,7 @@
 // Optimized Header.tsx for Next.js
 "use client";
 import React, { useState, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
@@ -70,7 +70,6 @@ const MobileNav: React.FC<{
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
 }> = ({ isOpen, onClose, userData }) => {
   const pathname = usePathname();
-  const router = useRouter();
 
   const handleConnectWallet = () => {
     toast.success("Connecting wallet...", {
