@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function LegacySection() {
   return (
-    <section className="bg-[#333] backdrop-blur-[15px] text-white py-16">
+    <section className="opacity-50 bg-[#333] backdrop-blur-[15px] text-white py-16">
       <div className="container mx-auto px-4">
         {/* Main Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 font-orbitron">
